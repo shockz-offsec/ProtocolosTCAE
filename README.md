@@ -1,6 +1,6 @@
 # ProtocolosTCAE
 
-Aplicación que muestra los diversos protocolos de auxiliar de enfermeria (T.C.A.E), tambien permite guardar en favoritos y büsqueda rápida.
+Aplicación que muestra los diversos protocolos de auxiliar de enfermeria (T.C.A.E), también permite guardar en favoritos y búsqueda rápida.
 
 ## Construido con 🛠️
 
@@ -17,6 +17,9 @@ Descarga el proyecto y abrelo con Android Studio , luego utiliza un AVD con nive
 ### APK 🔧
 
 Puedes descargar la APK desde el apartado "Releases".
+
+### Problemas conocidos y futuras correcciones
+  * Gestión de favoritos despues de una busqueda (RecyclerView problem)
 
 ## Autor ✒️
 
