@@ -3,6 +3,7 @@ package com.example.protocolostcae;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -80,20 +81,20 @@ public class RecyclerAdaptador extends RecyclerView.Adapter<RecyclerAdaptador.Vi
             //Agregamos la nota a nuestro texview del adaptador
             txtnota.setText(nota.getNota());
 
-            if (!Favoritos.getInstance().esFavorito(posicion)) {
+            if (!Favoritos.getInstance().esFavorito(nota.getId())) {
                 fav.setImageResource(R.drawable.fav_border);
             } else {
                 fav.setImageResource(R.drawable.fav_black);
             }
 
-            System.out.println(nota.getNota());
+            Log.d("Nota",nota.getNota());
 
 
             //Metodo onclic cuando nosotros precionemos un elemento se retornara la posicion
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    listener.onItemClick(posicion);
+                    listener.onItemClick(nota.getId());
 
                 }
             });
@@ -101,15 +102,15 @@ public class RecyclerAdaptador extends RecyclerView.Adapter<RecyclerAdaptador.Vi
             fav.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    listener.onFavClick(posicion);
+                    listener.onFavClick(nota.getId());
 
-                    if (Favoritos.getInstance().esFavorito(posicion)) {
-                        Favoritos.getInstance().deleteFav(posicion);
+                    if (Favoritos.getInstance().esFavorito(nota.getId())) {
+                        Favoritos.getInstance().deleteFav(nota.getId());
                         fav.setImageResource(R.drawable.fav_border);
                         Toast.makeText(c, "Se ha quitado de Favoritos", Toast.LENGTH_SHORT).show();
 
                     } else {
-                        Favoritos.getInstance().addFav(posicion);
+                        Favoritos.getInstance().addFav(nota.getId());
                         fav.setImageResource(R.drawable.fav_black);
                         Toast.makeText(c, "Se ha añadido a Favoritos", Toast.LENGTH_SHORT).show();
                     }

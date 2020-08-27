@@ -4,8 +4,18 @@ import java.util.ArrayList;
 
 public class IndexBusqueda {
     //Creamos variables
+    public int id;// ID único para cada nota
     public String index;
     public boolean realizado;
+
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public IndexBusqueda() {
         //inicializamos las variables
@@ -67,6 +77,7 @@ public class IndexBusqueda {
                 boolean realizado = arrayRealizado[i];
                 //Agregamos los elementos al objeto
                 objetoNota = new IndexBusqueda(nota, realizado);
+                objetoNota.setId(i);//Asignamos el Id de acuerda a su posición en la lista (no la posición en el recycler)
                 //agregamos el objeto a nuesta lista asi hasta que se llene con todos los elementos
                 lista.add(objetoNota);
             }
