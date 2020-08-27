@@ -18,9 +18,6 @@ Descarga el proyecto y abrelo con Android Studio , luego utiliza un AVD con nive
 
 Puedes descargar la APK desde el apartado "Releases".
 
-### Problemas conocidos y futuras correcciones
-  * Gestión de favoritos despues de una busqueda (RecyclerView problem)
-
 ## Autor ✒️
 
 * **Jorge Manuel Lozano Gómez**
