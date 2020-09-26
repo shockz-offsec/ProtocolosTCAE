@@ -24,10 +24,10 @@ Puedes descargar la APK desde el apartado "Releases".
 
 ## Preview de la App:
 
-**Menu principal**
+<h1 align="center">Menu Principal</h1>
 
-![Scrolling](http://g.recordit.co/G4SjS9XPBU.gif)
+<p align="center"><img src="http://g.recordit.co/G4SjS9XPBU.gif"></p>
 
-**Favoritos y Busqueda**
+<h1 align="center">Favoritos y Búsqueda</h1>
 
-![fav y busqueda](http://g.recordit.co/cA0vGAbDKV.gif)
+<p align="center"><img src="http://g.recordit.co/cA0vGAbDKV.gif"></p>
