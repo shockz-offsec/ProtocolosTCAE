@@ -18,10 +18,6 @@ Descarga el proyecto y abrelo con Android Studio , luego utiliza un AVD con nive
 
 Puedes descargar la APK desde el apartado "Releases".
 
-## Autor ✒️
-
-* **Jorge Manuel Lozano Gómez**
-
 ## Preview de la App:
 
 <h1 align="center">Menu Principal</h1>
