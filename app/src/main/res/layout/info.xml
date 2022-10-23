@@ -18,7 +18,7 @@
             android:layout_marginTop="60dp"
             android:paddingLeft="10dp"
             android:paddingRight="5dp"
-            android:text="Protocolos TCAE es una aplicación que permite consultar los diversos protocoloes de Técnico en Cuidados Auxiliares de Enfermería (T.C.A.E), además se puede buscar y añadir a favoritos dichos protocolos. \n\nDesarrollador: Jorge Manuel Lozano Gómez \n\n Android +4.0"
+            android:text="Protocolos TCAE es una aplicación que permite consultar los diversos protocoloes de Técnico en Cuidados Auxiliares de Enfermería (T.C.A.E), además se puede buscar y añadir a favoritos dichos protocolos. \n\nDesarrollador: Shockz \n\n Android +4.0"
             android:textColor="#000000"
             android:textSize="20sp"
             android:textStyle="bold"
